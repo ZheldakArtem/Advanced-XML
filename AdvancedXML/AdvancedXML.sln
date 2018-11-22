@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlValidator", "ValidateXml\XmlValidator.csproj", "{0593B454-86E2-4FA2-9665-A2A180A56F32}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlValidator(Task_1)", "ValidateXml\XmlValidator(Task_1).csproj", "{0593B454-86E2-4FA2-9665-A2A180A56F32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlToRss(Task_2)", "XmlToRss\XmlToRss(Task_2).csproj", "{A33A812A-4AC5-4138-B95F-35DCEEE0482E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0593B454-86E2-4FA2-9665-A2A180A56F32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0593B454-86E2-4FA2-9665-A2A180A56F32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0593B454-86E2-4FA2-9665-A2A180A56F32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A33A812A-4AC5-4138-B95F-35DCEEE0482E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A33A812A-4AC5-4138-B95F-35DCEEE0482E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A33A812A-4AC5-4138-B95F-35DCEEE0482E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A33A812A-4AC5-4138-B95F-35DCEEE0482E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

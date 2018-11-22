@@ -4,12 +4,12 @@
 		   targetNamespace="http://library.by/catalog"
 		   xmlns="http://library.by/catalog"
 		   xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:complexType name="bType">
+  <xs:complexType name="bookType">
 	<xs:sequence>
 	  <xs:element minOccurs="0" name="isbn" type="isnbValid" />
 	  <xs:element name="author" type="xs:string" />
 	  <xs:element name="title" type="xs:string" />
-	  <xs:element name="genre" type="bGenre" />
+	  <xs:element name="genre" type="bookGenre" />
 	  <xs:element name="publisher" type="xs:string" />
 	  <xs:element name="publish_date" type="xs:date" />
 	  <xs:element name="description" type="xs:string" />
@@ -18,7 +18,7 @@
 	<xs:attribute name="id" type="xs:string" use="required" />
   </xs:complexType>
 
-  <xs:simpleType name="bGenre">
+  <xs:simpleType name="bookGenre">
 	<xs:restriction base="xs:string">
 	  <xs:enumeration value="Computer" />
 	  <xs:enumeration value="Fantasy" />
@@ -36,12 +36,12 @@
 
   <xs:complexType name="bCatalog">
 	<xs:sequence>
-	  <xs:element maxOccurs="unbounded" name="book" type="bType" />
+	  <xs:element maxOccurs="unbounded" name="book" type="bookType" />
 	</xs:sequence>
   </xs:complexType>
 
   <xs:element name="catalog" type="bCatalog">
-	<xs:unique name="uniqId" xmlns:b="http://library.by/catalog">
+	<xs:unique name="uniqBookId" xmlns:b="http://library.by/catalog">
 	  <xs:selector xpath="b:book" />
 	  <xs:field xpath="@id"/>
 	</xs:unique>
