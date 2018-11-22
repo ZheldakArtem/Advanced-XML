@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlValidator(Task_1)", "Val
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlToRss(Task_2)", "XmlToRss\XmlToRss(Task_2).csproj", "{A33A812A-4AC5-4138-B95F-35DCEEE0482E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlToHtml(Task_3)", "XmlToHtml\XmlToHtml(Task_3).csproj", "{70A6FB76-B469-4B1A-883E-659189DF1BFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A33A812A-4AC5-4138-B95F-35DCEEE0482E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A33A812A-4AC5-4138-B95F-35DCEEE0482E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A33A812A-4AC5-4138-B95F-35DCEEE0482E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70A6FB76-B469-4B1A-883E-659189DF1BFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70A6FB76-B469-4B1A-883E-659189DF1BFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70A6FB76-B469-4B1A-883E-659189DF1BFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70A6FB76-B469-4B1A-883E-659189DF1BFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

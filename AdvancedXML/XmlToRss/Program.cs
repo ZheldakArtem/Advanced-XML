@@ -11,6 +11,7 @@ namespace XmlToRss
 {
 	public class Program
 	{
+		private const int RequiredCountOfArgs = 1;
 		public static void Main(string[] args)
 		{
 
@@ -53,9 +54,9 @@ namespace XmlToRss
 
 		private static bool ValidateArgs(string[] args)
 		{
-			if (args.Length != 1)
+			if (args.Length != RequiredCountOfArgs)
 			{
-				Console.WriteLine("Wrong number of parameters.(Enter one parameter)");
+				Console.WriteLine($"Wrong number of parameters.(Enter {RequiredCountOfArgs} parameter)");
 
 				return false;
 			}

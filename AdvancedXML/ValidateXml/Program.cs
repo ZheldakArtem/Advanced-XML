@@ -8,6 +8,7 @@ namespace ValidateXml
 {
 	public class Program
 	{
+		private const int RequiredCountOfArgs = 2;
 		private static bool success = true;
 
 		public static void Main(string[] args)
@@ -46,7 +47,7 @@ namespace ValidateXml
 
 			XmlReader reader = XmlReader.Create(args[0], settings);
 
-			while (reader.Read());
+			while (reader.Read()) ;
 		}
 
 		private static void ValidationCallBack(object sender, ValidationEventArgs e)
@@ -57,9 +58,9 @@ namespace ValidateXml
 
 		private static bool ValidateArgs(string[] args)
 		{
-			if (args.Length != 2)
+			if (args.Length != RequiredCountOfArgs)
 			{
-				Console.WriteLine("Enter two arguments. The first argument should have *.xml, the second should have *.xsd format");
+				Console.WriteLine($"Enter {RequiredCountOfArgs} arguments. The first argument should have *.xml, the second should have *.xsd format");
 
 				return false;
 			}
