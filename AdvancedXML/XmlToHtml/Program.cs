@@ -11,6 +11,7 @@ namespace XmlToHtml
 	public class Program
 	{
 		private const int RequiredCountOfArgs = 3;
+
 		public static void Main(string[] args)
 		{
 			ValidateArgs(args);
@@ -20,9 +21,16 @@ namespace XmlToHtml
 				var stylesheet = args[1];
 				var inputXml = args[0];
 				var resultHtml = args[2];
+				var argList = new XsltArgumentList();
+				argList.AddParam("CurrentDate", "", DateTime.Today);
 
 				transform.Load(args[1]);
 				transform.Transform(inputXml, resultHtml);
+				
+				using (var file = File.Create(resultHtml))
+				{
+					transform.Transform(inputXml, argList, file);
+				}
 			}
 			catch (Exception ex)
 			{

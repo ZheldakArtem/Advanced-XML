@@ -13,7 +13,7 @@
 	  </head>
 	  <body>
 		<h1>
-		  <xsl:value-of select="$CurrentDate"/>
+		  Date: <xsl:value-of select="$CurrentDate"/>
 		</h1>
 
 		<xsl:call-template name="ComputerGenre">
